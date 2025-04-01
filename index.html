@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Révérend Constant - Services Religieux</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>Révérend Constant</h1>
+    </div>
+    <div class="collar-design"></div>
+  </header>
+
+  <section class="intro">
+    <div class="photo-container">
+      <img src="reverend_enhanced.jpg" alt="Révérend Constant" class="profile-photo">
+    </div>
+    <div class="welcome-text">
+      <div class="welcome-header">
+        <h2>Bienvenue</h2>
+        <div class="hamburger-menu">
+          <button id="hamburger-button" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav id="mobile-menu" class="hidden">
+            <ul>
+              <li><a href="bapteme.html">Baptême</a></li>
+              <li><a href="mariage.html">Mariage</a></li>
+              <li><a href="enterrement.html">Funérailles</a></li>
+              <li><a href="confirmation.html">Confirmation</a></li>
+              <li><a href="guidance.html">Accompagnement Spirituel</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <p>Pasteur protestant, je suis au service de tous les chrétiens qui souhaitent vivre leur foi en respectant tradition et modernité. Ma mission est d'accompagner chacun dans son cheminement spirituel, au travers des Écritures et des outils offerts par notre Religion.</p>
+    </div>
+  </section>
+
+  <section class="services">
+    <h2>Mes Services</h2>
+    <div class="service-tabs">
+      <div class="service-tab">
+        <a href="mariage.html">
+          <img src="mariage.jpg" alt="Mariage">
+          <h3>Mariage</h3>
+        </a>
+      </div>
+      <div class="service-tab">
+        <a href="bapteme.html">
+          <img src="bapteme.jpg" alt="Baptême">
+          <h3>Baptême</h3>
+        </a>
+      </div>
+      <div class="service-tab">
+        <a href="confirmation.html">
+          <img src="confirmation.jpg" alt="Confirmation">
+          <h3>Confirmation</h3>
+        </a>
+      </div>
+      <div class="service-tab">
+        <a href="enterrement.html">
+          <img src="enterrement.jpg" alt="Funérailles">
+          <h3>Funérailles</h3>
+        </a>
+      </div>
+      <div class="service-tab">
+        <a href="guidance.html">
+          <img src="guidance.jpg" alt="Accompagnement Spirituel">
+          <h3>Accompagnement Spirituel</h3>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="location">
+    <h2>Lieu de Culte</h2>
+    <p>Services disponibles à mon presbytère (Octave Michotlaan 1, 1640 Rhode-Saint-Genèse), à 10 minutes de Waterloo, en déplacement ou par visioconférence si besoin.<br>
+    Téléphone: 0470 78 18 34.</p>
+  </section>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Accueil</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>&copy; 2025 Révérend Constant. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    document.getElementById('hamburger-button').addEventListener('click', function(event) {
+      event.stopPropagation();
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', function(event) {
+      const hamburgerButton = document.getElementById('hamburger-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (!hamburgerButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
