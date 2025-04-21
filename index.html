@@ -5,65 +5,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Révérend Constant</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero-section">
-    <div class="overlay">
-      <img src="logo.png" alt="Logo" class="hero-logo">
-      <h1>Révérend Constant</h1>
-      <p class="hero-subtitle">Pasteur protestant indépendant – tradition & modernité</p>
-    </div>
+  <div class="background-overlay"></div>
+
+  <header class="hero-text">
+    <h1>Bienvenue sur le site du Révérend Constant</h1>
+    <p>Un ministère de foi, d'écoute et d'accompagnement spirituel</p>
+    <a href="contact.html" class="cta-button">Prenez contact</a>
   </header>
 
-  <section class="about">
-    <div class="about-container">
-      <img src="reverend_enhanced.jpg" class="portrait" alt="Révérend Constant">
-      <div class="about-text">
-        <h2>Bienvenue</h2>
-        <p>Pasteur protestant, je suis au service de tous les chrétiens qui souhaitent vivre leur foi en respectant tradition et modernité. Ma mission est d'accompagner chacun dans son cheminement spirituel, au travers des Écritures et des outils offerts par notre Religion.</p>
+  <div class="logo">
+    <img src="logo.png" alt="Logo Révérend Constant">
+  </div>
+
+  <main class="main-container">
+    <div class="minister-container">
+      <div class="minister-photo">
+        <img src="reverend_enhanced.png" alt="Révérend Constant">
+      </div>
+
+      <div class="service-orbit">
+        <a href="bapteme.html" class="service-item floating" id="service-bapteme">
+          <div class="service-circle">
+            <img src="icon_bapteme.png" alt="Baptême">
+          </div>
+          <span class="service-name">BAPTÊME</span>
+        </a>
+
+        <a href="confirmation.html" class="service-item floating" id="service-confirmation">
+          <div class="service-circle">
+            <img src="icon_confirmation.png" alt="Confirmation">
+          </div>
+          <span class="service-name">CONFIRMATION</span>
+        </a>
+
+        <a href="mariage.html" class="service-item floating" id="service-mariage">
+          <div class="service-circle">
+            <img src="icon_mariage.png" alt="Mariage">
+          </div>
+          <span class="service-name">MARIAGE</span>
+        </a>
+
+        <a href="guidance.html" class="service-item floating" id="service-accompagnement">
+          <div class="service-circle">
+            <img src="icon_guidance.png" alt="Accompagnement">
+          </div>
+          <span class="service-name">ACCOMPAGNEMENT</span>
+        </a>
+
+        <a href="enterrement.html" class="service-item floating" id="service-funerailles">
+          <div class="service-circle">
+            <img src="icon_enterrement.png" alt="Funérailles">
+          </div>
+          <span class="service-name">FUNÉRAILLES</span>
+        </a>
       </div>
     </div>
-  </section>
+  </main>
 
-  <section class="services">
-    <h2>Mes Services</h2>
-    <div class="service-grid">
-      <a href="mariage.html" class="service-card">
-        <img src="icon_mariage.png" alt="Mariage">
-        <h3>Mariage</h3>
-      </a>
-      <a href="bapteme.html" class="service-card">
-        <img src="icon_bapteme.png" alt="Baptême">
-        <h3>Baptême</h3>
-      </a>
-      <a href="confirmation.html" class="service-card">
-        <img src="icon_confirmation.png" alt="Confirmation">
-        <h3>Confirmation</h3>
-      </a>
-      <a href="enterrement.html" class="service-card">
-        <img src="enterrement.jpg" alt="Funérailles">
-        <h3>Funérailles</h3>
-      </a>
-      <a href="guidance.html" class="service-card">
-        <img src="icon_guidance.png" alt="Accompagnement">
-        <h3>Accompagnement</h3>
-      </a>
+  <nav class="bottom-bar">
+    <div class="nav-links">
+      <div class="nav-item">Révérend Constant</div>
+      <a href="eglise.html" class="nav-item">Notre Ministère</a>
+      <a href="contact.html" class="nav-item">Contact</a>
     </div>
-  </section>
+  </nav>
 
-  <section class="contact">
-    <h2>Lieu de Culte & Contact</h2>
-    <p>Services disponibles à mon presbytère (Octave Michotlaan 1, 1640 Rhode-Saint-Genèse), à 10 minutes de Waterloo, en déplacement ou par visioconférence si besoin.<br>Téléphone : 0470 78 18 34</p>
-    <a class="cta" href="contact.html">Me contacter</a>
-  </section>
-
-  <footer>
-    <div class="footer-links">
-      <a href="index.html">Accueil</a>
-      <a href="contact.html">Contact</a>
-      <a href="agenda.html">Agenda</a>
-    </div>
+  <footer class="site-footer">
     <p>&copy; 2025 Révérend Constant. Tous droits réservés.</p>
   </footer>
 </body>
