@@ -1,149 +1,290 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Célébration de Mariage Chrétien Personnalisée - Belgique</title>
-  <meta name="description" content="Célébration de mariages religieux dans le lieu de votre choix en Belgique. Une cérémonie chrétienne œcuménique, préparée avec soin et à votre image.">
-  <link rel="canonical" href="https://www.reverend.be/mariage.html" />
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="mariage-styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Célébration de Mariage Chrétien Personnalisée - Belgique</title>
+  <meta name="description" content="Célébration de mariages religieux dans le lieu de votre choix en Belgique. Une cérémonie chrétienne œcuménique, préparée avec soin et à votre image.">
+  <link rel="canonical" href="https://www.reverend.be/mariage.html" />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    /* NOTE: Ce CSS est une approximation basée sur le style de la brochure. 
+       Il faudrait l'adapter à votre fichier mariage-styles.css existant. */
+    body { font-family: 'Playfair Display', serif; }
+    .content-section { padding: 20px; text-align: center; border-bottom: 1px solid #eee; }
+    .section-title { font-family: 'Cinzel', serif; }
+    .btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #C8B071; /* Couleur dorée de votre site */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-family: 'Cinzel', serif;
+        cursor: pointer;
+        border: none;
+        font-size: 1em;
+    }
+    .btn:hover {
+        background-color: #b39b5c;
+    }
+    .main-container { max-width: 900px; margin: auto; }
+    .page-header { text-align: center; padding: 40px 0; }
+    .page-title { font-size: 3em; }
+    .page-subtitle { font-size: 1.2em; }
+    .image-gallery { display: flex; gap: 10px; justify-content: center; padding: 20px 0; }
+    .gallery-image { width: 32%; }
+    ul { list-style-position: inside; text-align: left; max-width: 500px; margin: auto;}
+    .price-line { font-size: 1.1em; }
+    .gold-text { color: #C8B071; font-weight: bold; }
+    .reservation-section { border: 1px solid #eee; padding: 20px; margin-top: 20px; text-align: center; }
+    .bottom-bar { text-align: center; padding: 20px; }
+  </style>
+  <link rel="stylesheet" href="mariage-styles.css"> <!-- Votre CSS original est conservé -->
 </head>
 <body>
-  <div class="logo">
-    <a href="index.html">
-    <img src="logo.png" alt="Logo Révérend Constant">
-    </a>
-  </div>
+  <div class="logo">
+    <a href="index.html">
+    <img src="logo.png" alt="Logo Révérend Constant">
+    </a>
+  </div>
 
-  <div class="hamburger-menu">
-    <button id="hamburger-button" aria-label="Menu">
-    <span></span>
-    <span></span>
-    <span></span>
-    </button>
-    <nav id="mobile-menu" class="hidden">
-    <ul>
-    <li><a href="index.html">Accueil</a></li>
-    <li><a href="bapteme.html">Baptême</a></li>
-    <li><a href="mariage.html">Mariage</a></li>
-    <li><a href="enterrement.html">Funérailles</a></li>
-    <li><a href="confirmation.html">Confirmation</a></li>
-    <li><a href="guidance.html">Accompagnement Spirituel</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    </ul>
-    </nav>
-  </div>
+  <div class="hamburger-menu">
+    <button id="hamburger-button" aria-label="Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+    </button>
+    <nav id="mobile-menu" class="hidden">
+    <ul>
+    <li><a href="index.html">Accueil</a></li>
+    <li><a href="bapteme.html">Baptême</a></li>
+    <li><a href="mariage.html">Mariage</a></li>
+    <li><a href="enterrement.html">Funérailles</a></li>
+    <li><a href="confirmation.html">Confirmation</a></li>
+    <li><a href="guidance.html">Accompagnement Spirituel</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    </ul>
+    </nav>
+  </div>
 
-  <header class="page-header">
-    <h1 class="page-title">Mariage</h1>
-    <p class="page-subtitle">VOTRE CÉRÉMONIE DE MARIAGE : UNE CÉLÉBRATION À VOTRE IMAGE</p>
-  </header>
+  <header class="page-header">
+    <h1 class="page-title">Mariage</h1>
+    <p class="page-subtitle">VOTRE CÉRÉMONIE DE MARIAGE : UNE CÉLÉBRATION À VOTRE IMAGE</p>
+  </header>
 
-  <div class="main-container">
-    <div class="image-gallery">
-    <img src="mariage1.jpg" alt="Mariage – Photo 1" class="gallery-image">
-    <img src="mariage2.jpg" alt="Mariage – Photo 2" class="gallery-image">
-    <img src="mariage3.jpg" alt="Mariage – Photo 3" class="gallery-image">
-    </div>
-    
-    <div class="content-section">
-    <h2 class="section-title">Une union bénie, une cérémonie qui vous ressemble</h2>
-    <p>
-    Chers fiancés,<br>
-    Félicitations pour votre engagement ! Vous êtes à l'aube d'un moment fondateur et vous souhaitez le célébrer par une cérémonie qui ait du sens, de la profondeur et de la spiritualité.
-    </p>
-    <p>
-    Je suis le <strong>Révérend Constant</strong>. En tant que pasteur officiant, ma plus grande joie est de créer pour vous une cérémonie de mariage chrétienne, authentique et personnalisée. Mon approche se veut ouverte et bienveillante, accueillant tous les couples chrétiens qui désirent placer leur union sous le regard de Dieu. Pour en savoir plus sur mon parcours, je vous invite à <a href="eglise.html#notre-pasteur" style="color: #C8B071; text-decoration: underline;">découvrir mon histoire</a>.
-    </p>
-    <p>
-    <strong style="font-family: 'Cinzel', serif; color: #444; font-size: 1.1em;">UN LIEU CHARGÉ DE SENS</strong><br>
-    Un jardin enchanteur, un château historique, une grange de caractère ou une église traditionnelle... J'ai à coeur de pouvoir célébrer votre union dans un lieu qui vous est propre, un lieu où ce moment de votre histoire pourra pleinement résonner.<br>
-    Au préalable, on se sera rencontrés à mon presbytère de Rhode-Saint-Genèse pour 2 séances préparatoires.
-    </p>
-    </div>
-    
-    <div class="content-section">
-    <h2 class="section-title">Notre accompagnement personnalisé</h2>
-    <p>
-    Chaque couple est unique, votre cérémonie le sera également. Notre préparation est une collaboration basée sur l'écoute :
-    </p>
-    <ul>
-    <li>Une rencontre pour faire connaissance afin de comprendre votre vision de cet engagement et de vous partager les valeurs du mariage chrétien.</li>
-    <li>Une seconde rencontre pour la préparation afin de sélectionner les textes, prières et musiques, et de vous guider dans la rédaction de vœux personnels.</li>
-    <li>La célébration de votre mariage comme nous l'aurons préparé et avec bienveillance.</li>
-    <li>La remise d'un certificat de mariage, précieusement consigné dans mon Livre des Actes.</li>
-    </ul>
-    </div>
-    
-    <div class="content-section">
-    <h2 class="section-title">Votre contribution pour ce moment unique</h2>
-    <p class="price-line">
-    <span class="gold-text">Forfait Célébration à 350 € :</span> Comprend nos 2 rencontres préparatoires (possibles par visioconférence), la personnalisation de votre cérémonie, la célébration au lieu de votre choix et l'enregistrement de l'acte.
-    </p>
-    </div>
-    
-    <div class="content-section">
-    <h2 class="section-title">À prévoir pour la cérémonie</h2>
-    <p>Pour le bon déroulement de la cérémonie, nous aurons simplement besoin de prévoir :</p>
-    <ul>
-    <li>Un témoin pour chaque fiancé.</li>
-    <li>Un ou plusieurs lecteurs pour les textes choisis.</li>
-    <li>La présentation de votre acte de mariage civil.</li>
-    <li>Un autel (ou une table) pour y déposer la Bible.</li>
-    <li>Une sonorisation pour la musique et les prises de parole.</li>
-    </ul>
-    </div>
-    
-    <div class="content-section">
-    <h2 class="section-title">Contact</h2>
-    <p>
-    Une question ? Un besoin particulier ? Rendez-vous sur la page de contact.
-    </p>
-    <p>
-    Et si votre choix est fait, pensez à réserver dès maintenant votre mariage.
-    </p>
-    </div>
-    
-    <div class="reservation-section">
-    <h3 style="margin-bottom: 10px;">Réservez votre date</h3>
-    <p>
-    🗓️ Je suis disponible les lundis, jeudis et samedis.<br>
-    Pour un autre jour de la semaine, contactez-moi par téléphone au préalable.
-    </p>
-    
-    <br>
-    
-    <div class="form-group">
-    <label for="datePicker">Date souhaitée :</label>
-    <div class="date-picker-container">
-    <input type="date" id="datePicker" placeholder="jj/mm/aaaa">
-    </div>
-    </div>
-    
-    <button id="bookButton" class="btn">Vérifier la disponibilité</button>
-    
-    <div id="message" style="margin-top:20px; font-weight: bold;"></div>
-    
-    <div id="paypalButton" class="paypal-button" style="display:none;">
-    <form action="https://www.paypal.com/ncp/payment/NKB3GZY692Y5U" method="post" target="_blank">
-    <input class="pp-NKB3GZY692Y5U" type="submit" value="Je réserve" />
-    <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
-    <section style="color: #C8B071;"> Optimisé par <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
-    </form>
-    </div>
-    </div>
-  </div>
+  <div class="main-container">
+    <div class="image-gallery">
+    <img src="mariage1.jpg" alt="Mariage – Photo 1" class="gallery-image">
+    <img src="mariage2.jpg" alt="Mariage – Photo 2" class="gallery-image">
+    <img src="mariage3.jpg" alt="Mariage – Photo 3" class="gallery-image">
+    </div>
+    
+    <div class="content-section">
+    <h2 class="section-title">Une union bénie, une cérémonie qui vous ressemble</h2>
+    <p>
+    Chers fiancés,<br>
+    Félicitations pour votre engagement ! Vous êtes à l'aube d'un moment fondateur et vous souhaitez le célébrer par une cérémonie qui ait du sens, de la profondeur et de la spiritualité.
+    </p>
+    <p>
+    Je suis le <strong>Révérend Constant</strong>. En tant que pasteur officiant, ma plus grande joie est de créer pour vous une cérémonie de mariage chrétienne, authentique et personnalisée. Mon approche se veut ouverte et bienveillante, accueillant tous les couples chrétiens qui désirent placer leur union sous le regard de Dieu. Pour en savoir plus sur mon parcours, je vous invite à <a href="eglise.html#notre-pasteur" style="color: #C8B071; text-decoration: underline;">découvrir mon histoire</a>.
+    </p>
+    <p>
+    <strong style="font-family: 'Cinzel', serif; color: #444; font-size: 1.1em;">UN LIEU CHARGÉ DE SENS</strong><br>
+    Un jardin enchanteur, un château historique, une grange de caractère ou une église traditionnelle... J'ai à coeur de pouvoir célébrer votre union dans un lieu qui vous est propre, un lieu où ce moment de votre histoire pourra pleinement résonner.<br>
+    Au préalable, on se sera rencontrés à mon presbytère de Rhode-Saint-Genèse pour 2 séances préparatoires.
+    </p>
+    </div>
+    
+    <div class="content-section">
+    <h2 class="section-title">Notre accompagnement personnalisé</h2>
+    <p>
+    Chaque couple est unique, votre cérémonie le sera également. Notre préparation est une collaboration basée sur l'écoute :
+    </p>
+    <ul>
+    <li>Une rencontre pour faire connaissance afin de comprendre votre vision de cet engagement et de vous partager les valeurs du mariage chrétien.</li>
+    <li>Une seconde rencontre pour la préparation afin de sélectionner les textes, prières et musiques, et de vous guider dans la rédaction de vœux personnels.</li>
+    <li>La célébration de votre mariage comme nous l'aurons préparé et avec bienveillance.</li>
+    <li>La remise d'un certificat de mariage, précieusement consigné dans mon Livre des Actes.</li>
+    </ul>
+    </div>
+    
+    <div class="content-section">
+    <h2 class="section-title">Votre contribution pour ce moment unique</h2>
+    <p class="price-line">
+    <span class="gold-text">Forfait Célébration à 350 € :</span> Comprend nos 2 rencontres préparatoires (possibles par visioconférence), la personnalisation de votre cérémonie, la célébration au lieu de votre choix et l'enregistrement de l'acte.
+    </p>
+    </div>
+    
+    <div class="content-section">
+    <h2 class="section-title">À prévoir pour la cérémonie</h2>
+    <p>Pour le bon déroulement de la cérémonie, nous aurons simplement besoin de prévoir :</p>
+    <ul>
+    <li>Un témoin pour chaque fiancé.</li>
+    <li>Un lecteur pour les textes choisis.</li>
+    <li>La présentation de votre acte de mariage civil.</li>
+    <li>Un autel (ou une table) pour y déposer la Bible.</li>
+    <li>Une sonorisation pour la musique et les prises de parole.</li>
+    </ul>
+    </div>
+    
+    <div class="content-section">
+    <h2 class="section-title">Contact</h2>
+    <p>
+    Une question ? Un besoin particulier ? Rendez-vous sur la page de contact.
+    </p>
+    <p>
+    Et si votre choix est fait, pensez à réserver dès maintenant votre mariage.
+    </p>
+    </div>
 
-  <div class="bottom-bar">
-    <div class="nav-links">
-    <a href="index.html" class="nav-item">Révérend Constant</a>
-    <a href="eglise.html" class="nav-item">Notre Ministère</a>
-    <a href="contact.html" class="nav-item">Contact</a>
+    <!-- NOUVELLE SECTION POUR TÉLÉCHARGER LA BROCHURE -->
+    <div class="content-section">
+        <h2 class="section-title">Notre Brochure de Mariage</h2>
+        <p>Retrouvez toutes ces informations en détail dans notre brochure, disponible en téléchargement.</p>
+        <a id="downloadLink" href="#" download="brochure-mariage-pasteur-constant.html" class="btn">Télécharger la Brochure</a>
     </div>
-  </div>
+    
+    <div class="reservation-section">
+    <h3 style="margin-bottom: 10px;">Réservez votre date</h3>
+    <p>
+    🗓️ Je suis disponible les lundis, jeudis et samedis.<br>
+    Pour un autre jour de la semaine, contactez-moi par téléphone au préalable.
+    </p>
+    
+    <br>
+    
+    <div class="form-group">
+    <label for="datePicker">Date souhaitée :</label>
+    <div class="date-picker-container">
+    <input type="date" id="datePicker" placeholder="jj/mm/aaaa">
+    </div>
+    </div>
+    
+    <button id="bookButton" class="btn">Vérifier la disponibilité</button>
+    
+    <div id="message" style="margin-top:20px; font-weight: bold;"></div>
+    
+    <div id="paypalButton" class="paypal-button" style="display:none;">
+    <form action="https://www.paypal.com/ncp/payment/NKB3GZY692Y5U" method="post" target="_blank">
+    <input class="pp-NKB3GZY692Y5U" type="submit" value="Je réserve" />
+    <img src="https://www.paypalobjects.com/images/Debit_Credit_APM.svg" alt="cards" />
+    <section style="color: #C8B071;"> Optimisé par <img src="https://www.paypalobjects.com/paypal-ui/logos/svg/paypal-wordmark-color.svg" alt="paypal" style="height:0.875rem;vertical-align:middle;"/></section>
+    </form>
+    </div>
+    </div>
+  </div>
 
-  <script src="agenda-config.js"></script>
-  <script src="mariage-script.js"></script>
+  <div class="bottom-bar">
+    <div class="nav-links">
+    <a href="index.html" class="nav-item">Révérend Constant</a>
+    <a href="eglise.html" class="nav-item">Notre Ministère</a>
+    <a href="contact.html" class="nav-item">Contact</a>
+    </div>
+  </div>
+
+  <script src="agenda-config.js"></script>
+  <script src="mariage-script.js"></script>
+  <script>
+    // Ce script prépare le lien de téléchargement pour la brochure.
+    document.addEventListener('DOMContentLoaded', function() {
+        const brochureContent = `
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brochure de Mariage - Pasteur Constant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Raleway', sans-serif; margin: 0; padding: 0; background-color: #FDFBF8; color: #5D5D5D; font-size: 16px; line-height: 1.7; }
+        .container { max-width: 900px; margin: 40px auto; padding: 20px; background-color: #FFFFFF; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border: 1px solid #EAEAEA; }
+        .header { text-align: center; padding: 40px 20px; background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1508318043324-31e344267602?q=80&w=1974&auto=format&fit=crop') no-repeat center center; background-size: cover; color: #FFFFFF; }
+        .header h1 { font-family: 'Cinzel', serif; font-size: 3em; font-weight: 700; margin: 0; letter-spacing: 2px; }
+        .header h2 { font-family: 'Playfair Display', serif; font-size: 1.5em; font-weight: 400; margin-top: 10px; opacity: 0.9; }
+        .section { padding: 30px 20px; border-bottom: 1px solid #EAEAEA; }
+        .section:last-child { border-bottom: none; }
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2em; font-weight: 600; color: #333; text-align: center; margin-bottom: 30px; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 2px; background-color: #C8B071; margin: 10px auto 0; }
+        .intro p { font-style: italic; text-align: center; font-size: 1.1em; color: #777; }
+        .two-columns { display: flex; gap: 40px; align-items: center; }
+        .two-columns .col { flex: 1; }
+        .two-columns img { width: 100%; height: auto; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        h4 { font-family: 'Cinzel', serif; font-size: 1.3em; color: #333; margin-top: 0; }
+        ul { list-style: none; padding: 0; }
+        ul li { padding-left: 25px; position: relative; margin-bottom: 15px; }
+        ul li::before { content: '🕊️'; position: absolute; left: 0; top: 0; color: #C8B071; }
+        .price-box { background-color: #F9F9F9; border: 1px solid #EAEAEA; border-left: 5px solid #C8B071; padding: 20px; margin-top: 20px; border-radius: 5px; }
+        .price-box p { margin: 0; }
+        .price-box .price { font-family: 'Cinzel', serif; font-size: 1.4em; font-weight: bold; color: #333; }
+        .footer { text-align: center; padding: 30px 20px; font-style: italic; }
+        @media (max-width: 768px) { .two-columns { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"><h1>Célébrer Votre Amour</h1><h2>Bénir Votre Union</h2></header>
+        <section class="section intro">
+            <h3 class="section-title">Chers fiancés,</h3>
+            <p>Toutes mes félicitations pour votre projet de mariage ! Vous êtes sur le point de vivre l'un des moments les plus sacrés et les plus joyeux de votre vie : un engagement profond l'un envers l'autre, scellé devant Dieu et vos proches. Ma vocation est de vous accompagner pour que cette cérémonie soit le reflet fidèle de votre couple, de votre histoire et de la dimension spirituelle que vous souhaitez donner à votre union.</p>
+        </section>
+        <section class="section">
+            <h3 class="section-title">Notre Cheminement Ensemble</h3>
+            <div class="two-columns">
+                <div class="col"><img src="https://images.unsplash.com/photo-1522992319-35145b205883?q=80&w=1887&auto=format&fit=crop" alt="Image de deux tasses de café."></div>
+                <div class="col">
+                    <h4>Étape 1 : Notre Première Rencontre</h4><p>Nous prendrons le temps de faire connaissance lors d'un rendez-vous à mon presbytère de Rhode-Saint-Genèse. Ce sera l'occasion pour moi de découvrir votre histoire, de comprendre votre vision du mariage et d'échanger sur les valeurs de l'engagement chrétien.</p>
+                    <h4>Étape 2 : La Préparation de Votre Cérémonie</h4><p>Lors de notre seconde rencontre, nous construirons le déroulement de votre célébration. Nous choisirons les textes bibliques, les prières, et même cette chanson si particulière qui vous est chère. Je vous guiderai également, si vous le souhaitez, dans la rédaction de vos vœux personnels.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h3 class="section-title">Le Cœur de Votre Cérémonie</h3>
+             <div class="two-columns">
+                <div class="col">
+                    <p>Votre cérémonie sera un moment sacré, rythmé par des étapes symboliques et personnalisées.</p>
+                    <ul>
+                        <li><strong>Accueil & Musique d'entrée :</strong> Lancement de la célébration par un mot de bienvenue et la chanson qui marquera votre entrée.</li>
+                        <li><strong>Lecture Biblique :</strong> Un texte choisi ensemble, porté par la voix d'un proche.</li>
+                        <li><strong>Prière Nuptiale :</strong> Un temps de recueillement et une prière écrite pour vous, afin de confier votre union à Dieu.</li>
+                        <li><strong>Échange des Vœux :</strong> Le moment central où vous prononcerez votre "Oui" et vos promesses personnelles.</li>
+                        <li><strong>Échange des Alliances :</strong> Le symbole visible et éternel de votre engagement.</li>
+                        <li><strong>Bénédiction & Proclamation :</strong> Je vous déclarerai mari et femme sous le regard de Dieu et de vos invités.</li>
+                        <li><strong>Signature des Registres :</strong> L'acte officiel, signé avec vos témoins, pour conclure ce moment solennel avant que la fête ne commence !</li>
+                    </ul>
+                </div>
+                <div class="col"><img src="https://images.unsplash.com/photo-1604924298198-8a82a0337f6e?q=80&w=1887&auto=format&fit=crop" alt="Image d'un pasteur de dos en soutane."></div>
+            </div>
+        </section>
+        <section class="section">
+            <h3 class="section-title">Informations Pratiques</h3>
+            <div class="two-columns">
+                 <div class="col"><img src="https://images.unsplash.com/photo-1595330353198-a5de4292215c?q=80&w=1887&auto=format&fit=crop" alt="Image de deux alliances sur une Bible."></div>
+                <div class="col">
+                    <h4>Le Lieu de Votre Célébration</h4><p>Un jardin, un château, une grange ou une chapelle... Je célèbre votre union dans le lieu qui a du sens pour vous, celui où votre histoire pourra pleinement résonner.</p>
+                    <h4>À prévoir pour la Cérémonie</h4><p>Nous aurons simplement besoin d'un témoin pour chacun, d'un lecteur, de votre acte de mariage civil, d'un autel (ou une table) pour la Bible et d'une sonorisation.</p>
+                    <div class="price-box">
+                        <p class="price">Forfait "Célébration" à 350 €</p>
+                        <p>Ce forfait inclut nos rencontres préparatoires, la création sur mesure de votre cérémonie, ma présence le jour J et la délivrance de votre acte de mariage.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>Je suis disponible les <strong>lundis, jeudis et samedis</strong>. N'hésitez pas à me contacter pour réserver votre date.<br>J'ai hâte de vous rencontrer et de cheminer avec vous vers votre grand jour.</p>
+        </footer>
+    </div>
+</body>
+</html>`;
+        
+        const blob = new Blob([brochureContent], { type: 'text/html' });
+        const url = URL.createObjectURL(blob);
+        
+        const downloadLink = document.getElementById('downloadLink');
+        downloadLink.href = url;
+    });
+  </script>
 </body>
 </html>
